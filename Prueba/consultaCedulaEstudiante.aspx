@@ -126,7 +126,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlInput1">Cedula</label>
-                                    <input type="text" class="form-control" value="" id="extra7" name="extra7" onkeypress="return isNumber(event)" />
+                                    <input type="text" class="form-control" value="" id="cedula" name="cedula"  runat="server" onkeypress="return isNumber(event)" />
                                 </div>
                             </form>
                             <button class="btn btn-primary" type="submit">Consultar</button>
@@ -137,11 +137,16 @@
                                             <th scope="col">Informacion de Estudiante</th>
                                         </tr>
                                     </thead>
+                                    <tbody>
+                                        <asp:GridView ID="gridEstudiantes" runat="server">
+
+                                        </asp:GridView>
+                                    </tbody>
                                 </table>
                             </div>
 
                         </article>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>

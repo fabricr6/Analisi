@@ -2424,6 +2424,12 @@ namespace Datos
             }
         }
 
+        /*public DataSet consultaEstudianteCedula(string nom_pa,string identificacion, ref string err_msj, ref int error_num)
+        {
+
+        }*/
+
+
         public DataSet consultar_estudiantes(string nom_pa, string identificacion, ref string error_msj, ref int error_num)
         {
 
