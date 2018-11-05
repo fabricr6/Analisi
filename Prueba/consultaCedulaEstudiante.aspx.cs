@@ -35,8 +35,8 @@ namespace Prueba
             if (error_msj == "ok" && error_num == 0)
             {
                 // Carga los datos en el datagrid
-                gridEstudiante.DataSource = ds_info;
-                gridEstudiante.DataBind();
+                gridEstudiantes.DataSource = ds_info;
+                gridEstudiantes.DataBind();
             }
         }
     }
