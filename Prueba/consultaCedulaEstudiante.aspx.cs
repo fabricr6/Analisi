@@ -17,7 +17,7 @@ namespace Prueba
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.MaintainScrollPositionOnPostBack = true;
-            if (!IsPostBack)
+            if (IsPostBack)
             {
                 cargarEstIden();
             }
@@ -31,7 +31,7 @@ namespace Prueba
             int error_num = 0;
             string identificacion = cedula.Value.ToString();
             // Ejecuta PA para obtener listado del estudiante
-            ds_info = datos.consultar_estudiantes("pa_listar_todos_usuarios",identificacion, ref error_msj, ref error_num);
+            ds_info = datos.consultar_estudiantes("pa_consulta_estuiante_identificacion", identificacion, ref error_msj, ref error_num);
             if (error_msj == "ok" && error_num == 0)
             {
                 // Carga los datos en el datagrid
