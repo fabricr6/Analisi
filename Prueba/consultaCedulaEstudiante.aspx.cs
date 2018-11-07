@@ -17,7 +17,7 @@ namespace Prueba
         protected void Page_Load(object sender, EventArgs e)
         {
             Page.MaintainScrollPositionOnPostBack = true;
-            if (IsPostBack)
+            if (!IsPostBack)
             {
                 cargarEstIden();
             }

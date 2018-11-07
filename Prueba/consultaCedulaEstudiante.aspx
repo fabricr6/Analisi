@@ -138,7 +138,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <asp:GridView ID="gridEstudiantes" runat="server"  >
+                                        <asp:GridView ID="gridEstudiantes" runat="server" OnRowDataBound="OnRowDataBound" >
                                              <AlternatingRowStyle CssClass="fila-alternada-lista" />
                                                     <RowStyle CssClass="fila-lista" />
                                         </asp:GridView>
