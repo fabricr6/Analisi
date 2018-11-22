@@ -29,15 +29,20 @@ namespace Prueba
             DataSet ds_info = new DataSet();
             string error_msj = "";
             int error_num = 0;
-            string identificacion = cedula.Value.ToString();
+            //string identificacion = cedula.Value.ToString();
             // Ejecuta PA para obtener listado del estudiante
-            ds_info = datos.consultar_estudiantes("pa_consulta_estuiante_identificacion", identificacion, ref error_msj, ref error_num);
+            //ds_info = datos.consultar_estudiantes("pa_consulta_estuiante_identificacion", identificacion, ref error_msj, ref error_num);
             if (error_msj == "ok" && error_num == 0)
             {
                 // Carga los datos en el datagrid
-                gridEstudiantes.DataSource = ds_info;
-                gridEstudiantes.DataBind();
+                //gridEstudiantesCedula.DataSource = ds_info;
+                //gridEstudiantesCedula.DataBind();
             }
+        }
+
+        protected void gridEstudiantesCedula_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

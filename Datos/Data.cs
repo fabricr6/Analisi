@@ -2432,7 +2432,6 @@ namespace Datos
 
         public DataSet consultar_estudiantes(string nom_pa, string identificacion, ref string error_msj, ref int error_num)
         {
-
             conn = cls_SQL.Make_Connection("ConexionP", ref error_message, ref error_number);
             if (conn == null)
             {

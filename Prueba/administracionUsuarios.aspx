@@ -231,7 +231,7 @@
                                                 <asp:Label ID="lblTitUsuarios" runat="server" CssClass="etiquetas" Text="Usuarios"></asp:Label>
                                             </div>
                                             <asp:Panel ID="Panel1" runat="server" ScrollBars="Vertical" Height="500px" Width="370px">
-                                                <asp:GridView ID="gridUsuarios" OnRowDataBound="OnRowDataBound" runat="server" Height="20px" Width="223px" OnSelectedIndexChanged="gridUsuarios_SelectedIndexChanged"  CellPadding="4" ForeColor="#333333" GridLines="None" Font-Names="Tahoma" Font-Size="XX-Small">
+                                                <asp:GridView ID="gridUsuarios"  OnRowDataBound="OnRowDataBound" runat="server" Height="20px" Width="223px" OnSelectedIndexChanged="gridUsuarios_SelectedIndexChanged"  CellPadding="4" ForeColor="#333333" GridLines="None" Font-Names="Tahoma" Font-Size="XX-Small">
                                                     <AlternatingRowStyle CssClass="fila-alternada-lista" />
                                                     <RowStyle CssClass="fila-lista" />
                                                 </asp:GridView>
