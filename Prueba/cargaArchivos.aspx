@@ -13,23 +13,39 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        
+    <form id="form1" runat="server">    
        <div class="row main-container middle-xs center-xs">
-        <div class="col-md-14 col-sm-14 col-xs-14">
+        <div class="col-md-13 col-sm-13 col-xs-13">
           <div class="box">
-            <div class="tarjeta ">
+            <div class="tarjetaFrm ">
               <header class="main-header "><!--Encabezado, una página puede tener más de un encabezado -->
-                  <nav class="main-nav"> <!--Definir un sistema de navegación -->
+                  <nav class="main-nav"> <!--Definir un sistema de navegación --> 
                       <a href="administracionUsuarios.aspx" class="nav-link">Usuarios</a>                    
-                      <a href="cargar_contenido.aspx" class="nav-link">Carga Archivos</a>
+                      <a href="cargaArchivos.aspx" class="nav-link">Carga Archivos</a>
                       <asp:LinkButton ID="LinkButton1" runat="server" class="nav-link"  Text="Cerrar Sesión"></asp:LinkButton>
                   </nav>
               </header>
+
               <article class="body"><!--La etiqueta se utiliza para definir contenido independiente -->
                 <header class="modulos">
-             
-
+                    <h1 class="steel_blue_text promt tittle ">Actualización de convocatorias</h1>
+                    <a href="menuAdministrador.aspx">
+                    <img src="images/logoMep.jpg" height="100" alt="MEP Logo" /></a>
+                    <div class="contenedor-info">
+                              
+                        <div>
+                            <asp:Label ID="seleccionarArchivoEstudiante" runat="server" CssClass="etiquetas" Text="Buscar el archivo de estudiantes"></asp:Label>
+                            <asp:FileUpload ID="FUBuscarEstudiante" runat="server" />
+                            <asp:Label ID="cargarArchivoEstudiante" runat="server" CssClass="etiquetas" Text="Cargar los datos de los estudiantes"></asp:Label>
+                            <asp:Button ID="btnCargarEstudiante" runat="server" Text="Cargar datos" OnClick="btnCargarDatos_Click"/>
+                        </div>
+                         <div>
+                            <asp:Label ID="seleccionarArchivoMatricula" runat="server" CssClass="etiquetas" Text="Buscar el archivo de matrícula"></asp:Label>
+                            <asp:FileUpload ID="FUBuscarMatricula" runat="server" />
+                            <asp:Label ID="cargarArchivoMatricula" runat="server" CssClass="etiquetas" Text="Cargar los datos de la matrícula"></asp:Label>
+                            <asp:Button ID="btnCargarMatricula" runat="server" Text="Cargar datos"/>
+                        </div>
+                    </div>
                 </header>
               </article>
               <!--La etiqueta se utiliza para definir contenido independiente -->
