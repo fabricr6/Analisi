@@ -94,12 +94,12 @@ namespace Prueba {
         protected global::System.Web.UI.WebControls.Label cargarArchivoMatricula;
         
         /// <summary>
-        /// btnCargarMatricula control.
+        /// btnCargarArchivosMatricula control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCargarMatricula;
+        protected global::System.Web.UI.WebControls.Button btnCargarArchivosMatricula;
     }
 }

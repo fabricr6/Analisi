@@ -3064,8 +3064,8 @@ namespace Datos
                 }
             }
         }
-
-        public int cargarEstudiante(string pa, string direccion, ref string error_msj, ref int error_num)
+        /*Cargas de txt*/
+        public int cargarEstudiante(string procedimientoAlmacenado, string direccion, ref string error_msj, ref int error_num)
         {
             conn = cls_SQL.Make_Connection("ConexionP", ref error_message, ref error_number);
             if (conn == null)
@@ -3077,7 +3077,45 @@ namespace Datos
                 ParamStruct[] Params = new ParamStruct[1];
                 cls_SQL.Add_Data_Param_Struct(ref Params, 0, "@filePath", SqlDbType.VarChar, direccion, ParameterDirection.Input);
                 cls_SQL.Connect(conn, ref error_message, ref error_number);
-                cls_SQL.Execute_SQL_Command(conn, pa, true, Params, ref error_message, ref error_number);
+                cls_SQL.Execute_SQL_Command(conn, procedimientoAlmacenado, true, Params, ref error_message, ref error_number);
+                if (error_number == 0 && error_message == "ok")
+                {
+                    int error_numb = error_number;
+                    cls_SQL.Disconnect(conn, ref error_message, ref error_number);
+                    if (error_number == 0)
+                    {
+                        error_num = 0;
+                        error_msj = "ok";
+                        return error_numb;
+                    }
+                    else
+                    {
+                        return error_numb;
+                    }
+                }
+                else
+                {
+                    error_msj = error_message;
+                    error_num = error_number;
+                    cls_SQL.Disconnect(conn, ref error_message, ref error_number);
+                    return error_number;
+                }
+            }
+        }
+        
+        public int cargarMatriculas(string procedimientoAlmacenado, string direccion, ref string error_msj, ref int error_num)
+        {
+            conn = cls_SQL.Make_Connection("ConexionP", ref error_message, ref error_number);
+            if (conn == null)
+            {
+                return -1;
+            }
+            else
+            {
+                ParamStruct[] Params = new ParamStruct[1];
+                cls_SQL.Add_Data_Param_Struct(ref Params, 0, "@filePath", SqlDbType.VarChar, direccion, ParameterDirection.Input);
+                cls_SQL.Connect(conn, ref error_message, ref error_number);
+                cls_SQL.Execute_SQL_Command(conn, procedimientoAlmacenado, true, Params, ref error_message, ref error_number);
                 if (error_number == 0 && error_message == "ok")
                 {
                     int error_numb = error_number;

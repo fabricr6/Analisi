@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Poly" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
-    <title></title>
+    <title>Cargar archivos</title>
 </head>
 <body>
     <form id="form1" runat="server">    
@@ -43,7 +43,8 @@
                             <asp:Label ID="seleccionarArchivoMatricula" runat="server" CssClass="etiquetas" Text="Buscar el archivo de matrícula"></asp:Label>
                             <asp:FileUpload ID="FUBuscarMatricula" runat="server" />
                             <asp:Label ID="cargarArchivoMatricula" runat="server" CssClass="etiquetas" Text="Cargar los datos de la matrícula"></asp:Label>
-                            <asp:Button ID="btnCargarMatricula" runat="server" Text="Cargar datos"/>
+                            <asp:Button ID="btnCargarArchivosMatricula" runat="server" OnClick="btnCargarArchivosMatricula_Click" Text="Cargar datos" />
+
                         </div>
                     </div>
                 </header>
