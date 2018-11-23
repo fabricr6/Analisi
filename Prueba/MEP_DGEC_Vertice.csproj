@@ -130,7 +130,11 @@
     <Content Include="About.aspx" />
     <Content Include="administracionUsuarios.aspx" />
     <Content Include="cargaArchivos.aspx" />
+    <Content Include="consultaAdecuaciones.aspx" />
+    <Content Include="consultaPadronGeneral.aspx" />
     <Content Include="consultaCedulaEstudiante.aspx" />
+    <Content Include="consultaPadronAdecuaciones.aspx" />
+    <Content Include="consultaPorNombres.aspx" />
     <Content Include="ConsultaPruebaOrdinaria.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="contactenos.aspx" />
@@ -407,12 +411,40 @@
     <Compile Include="cargaArchivos.aspx.designer.cs">
       <DependentUpon>cargaArchivos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="consultaAdecuaciones.aspx.cs">
+      <DependentUpon>consultaAdecuaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultaAdecuaciones.aspx.designer.cs">
+      <DependentUpon>consultaAdecuaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consultaPadronGeneral.aspx.cs">
+      <DependentUpon>consultaPadronGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultaPadronGeneral.aspx.designer.cs">
+      <DependentUpon>consultaPadronGeneral.aspx</DependentUpon>
+    </Compile>
     <Compile Include="consultaCedulaEstudiante.aspx.cs">
       <DependentUpon>consultaCedulaEstudiante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="consultaCedulaEstudiante.aspx.designer.cs">
       <DependentUpon>consultaCedulaEstudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consultaPadronAdecuaciones.aspx.cs">
+      <DependentUpon>consultaPadronAdecuaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultaPadronAdecuaciones.aspx.designer.cs">
+      <DependentUpon>consultaPadronAdecuaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consultaPorNombres.aspx.cs">
+      <DependentUpon>consultaPorNombres.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="consultaPorNombres.aspx.designer.cs">
+      <DependentUpon>consultaPorNombres.aspx</DependentUpon>
     </Compile>
     <Compile Include="ConsultaPruebaOrdinaria.aspx.cs">
       <DependentUpon>ConsultaPruebaOrdinaria.aspx</DependentUpon>

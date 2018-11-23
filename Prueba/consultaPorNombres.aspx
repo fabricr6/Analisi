@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="consultaCedulaEstudiante.aspx.cs" Inherits="Prueba.consultaCedulaEstudiante" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="consultaPorNombres.aspx.cs" Inherits="Prueba.consultaPorNombres" %>
 
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Consulta por Prueba Ordinaria</title>
+    <title>Consulta por Nombre</title>
 </head>
     <script type="text/javascript">
         /*Filtra las coincidencias de la palabra en la lista*/
@@ -91,7 +91,7 @@
 <body>
 
 
-    <form id="formConsultaIdentificacion" runat="server">
+    <form id="formConsultaPorNombre" runat="server">
         <div>
             <div class="row main-container middle-xs center-xs">
             <div class="col-md-13 col-sm-13 col-xs-13">
@@ -109,24 +109,14 @@
                         <article class="body">
                             <div class="jumbotron jumbotron-fluid">
                                 <div class="container">
-                                    <h3 class="display-4">Consulta de Estudiante por Identificacion</h3>
+                                    <h3 class="display-4">Consulta de Estudiante por Nombre</h3>
                                     <p class="lead">Digite sus datos conforme se le solicita</p>
                                 </div>
                             </div>
                             <form>
                                 <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Seleccione el Tipo de Identificacion </label>
-                                    <select class="form-control" id="selectIdent">
-                                        <option>--Seleccione--</option>
-                                        <option>Nacional</option>
-                                        <option>Extranjero</option>
-                                        <option>Indocumentado</option>
-
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Cedula</label>
-                                    <input type="text" class="form-control" value="" id="cedula" name="cedula"  runat="server" onkeypress="return isNumber(event)" />
+                                    <label for="exampleFormControlInput1">Nombre</label>
+                                    <input placeholder="Nombre y/o Apellidos" type="text" class="form-control" value="" id="nombre" name="Nombre"  runat="server" onkeypress="return soloLetras(e)" />
                                 </div>
                             </form>
                             <button class="btn btn-primary" type="submit">Consultar</button>
@@ -138,7 +128,7 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <asp:GridView ID="gridEstudiantesCedula" runat="server" OnSelectedIndexChanged="gridEstudiantesCedula_SelectedIndexChanged"  >
+                                        <asp:GridView ID="gridNombreEstudiante" runat="server" >
                                              <AlternatingRowStyle CssClass="fila-alternada-lista" />
                                                     <RowStyle CssClass="fila-lista" />
                                         </asp:GridView>
@@ -156,3 +146,4 @@
 
 </body>
 </html>
+

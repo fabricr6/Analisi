@@ -10,16 +10,16 @@
 namespace Prueba {
     
     
-    public partial class consultaCedulaEstudiante {
+    public partial class consultaPorNombres {
         
         /// <summary>
-        /// Control formConsultaPadron.
+        /// Control formConsultaPorNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formConsultaPadron;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formConsultaPorNombre;
         
         /// <summary>
         /// Control LinkButton1.
@@ -28,15 +28,24 @@ namespace Prueba {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
         
         /// <summary>
-        /// Control GridPruebaOrdinaria.
+        /// Control nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridPruebaOrdinaria;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText nombre;
+        
+        /// <summary>
+        /// Control gridNombreEstudiante.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gridNombreEstudiante;
     }
 }

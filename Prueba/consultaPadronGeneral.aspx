@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ConsultaPruebaOrdinaria.aspx.cs" Inherits="Prueba.consultaCedulaEstudiante" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="consultaPadronGeneral.aspx.cs" Inherits="Prueba.consuktaPadronGeneral" %>
 
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Padrones Prueba Ordinaria </title>
+    <title>Consulta Padron General</title>
 </head>
 <script type="text/javascript">
     /*Filtra las coincidencias de la palabra en la lista*/
@@ -91,7 +91,7 @@
 <body>
 
 
-    <form id="formConsultaPadron" runat="server">
+    <form id="formConsultaPadronGeneral" runat="server">
         <div>
             <div class="row main-container middle-xs center-xs">
                 <div class="col-md-13 col-sm-13 col-xs-13">
@@ -109,21 +109,21 @@
                             <article class="body">
                                 <div class="jumbotron jumbotron-fluid">
                                     <div class="container">
-                                        <h3 class="display-4">Padrones Prueba Ordinaria </h3>
+                                        <h3 class="display-4">Consulta Padrón General </h3>
                                         <p class="lead">Selecciones los datos conforme se le solicita</p>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Provincia </label>
-                                    <select class="form-control" id="selectProvincia">
+                                    <select class="form-control" id="selectProvinciaPadronGeneral">
                                         <option>--Seleccione--</option>
 
                                     </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Region </label>
-                                    <select class="form-control" id="selectRegion">
+                                    <select class="form-control" id="selectRegionPadronGeneral">
                                         <option>--Seleccione--</option>
 
                                     </select>
@@ -131,24 +131,7 @@
 
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Sede </label>
-                                    <select class="form-control" id="selectSede">
-                                        <option>--Seleccione--</option>
-
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Asignatura </label>
-                                    <select class="form-control" id="selectASignatura">
-                                        <option>--Seleccione--</option>
-
-                                    </select>
-                                </div>
-
-
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Aula </label>
-                                    <select class="form-control" id="selectAula">
+                                    <select class="form-control" id="selectSedePadronGeneral">
                                         <option>--Seleccione--</option>
 
                                     </select>
@@ -163,7 +146,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <asp:GridView ID="GridPruebaOrdinaria" runat="server"></asp:GridView>
+                                            <asp:GridView ID="GridPadronGeneral" runat="server"></asp:GridView>
                                         </tbody>
                                     </table>
                                 </div>
@@ -178,3 +161,4 @@
 
 </body>
 </html>
+

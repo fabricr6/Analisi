@@ -10,16 +10,16 @@
 namespace Prueba {
     
     
-    public partial class consultaCedulaEstudiante {
+    public partial class consultaAdecuaciones {
         
         /// <summary>
-        /// Control formConsultaPadron.
+        /// Control formConsultaAdecuacion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formConsultaPadron;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formConsultaAdecuacion;
         
         /// <summary>
         /// Control LinkButton1.
@@ -28,15 +28,15 @@ namespace Prueba {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton5;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
         
         /// <summary>
-        /// Control GridPruebaOrdinaria.
+        /// Control GridconsultaAdecuaciones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridPruebaOrdinaria;
+        protected global::System.Web.UI.WebControls.GridView GridconsultaAdecuaciones;
     }
 }
